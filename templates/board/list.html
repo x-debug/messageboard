@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    {% for message in messages %}
+        {{ message.name }}-{{ message.email }}-{{ message.address }}-{{ message.content }}<br/>
+    {% endfor %}
+</div>
+</body>
+</html>
