@@ -14,11 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from django.contrib import admin
+import xadmin
 from board.views import message, list_message
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', xadmin.site.urls),
     url(r'^$', message, name='board_message'),
     url(r'^list$', list_message)
 ]
